@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 const initialData = {
   products: [
@@ -178,7 +178,7 @@ export default function App() {
   const [data, setData] = useState(initialData);
   const [modal, setModal] = useState(null);
   const [form, setForm] = useState({});
-  const [search, setSearch] = useState("");
+  
 
   const f = (n) => "₹" + n.toLocaleString("en-IN");
 
