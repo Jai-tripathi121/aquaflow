@@ -748,7 +748,7 @@ export default function App() {
                   <span>Subtotal: <b>{f(c.subtotal)}</b> &nbsp;|&nbsp;</span>
                   {c.sameState ? <span style={{ color: C.blue }}>CGST: <b>{f(c.cgst)}</b> | SGST: <b>{f(c.sgst)}</b></span> : <span style={{ color: C.indigo }}>IGST: <b>{f(c.igst)}</b></span>}
                 </div>
-                <div style={{ fontSize: 17, fontWeight: 800, color: C.green }}>Total: {f(c.total)}</span></div>
+                <div style={{ fontSize: 17, fontWeight: 800, color: C.green }}>Total: {f(c.total)}</div>
               </div>
             );
           })()}
