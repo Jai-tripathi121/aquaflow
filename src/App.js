@@ -679,7 +679,7 @@ export default function App() {
                   </div>
                 ))}
                 <div style={{ display: "flex", justifyContent: "space-between", padding: "10px 0", fontSize: 16, fontWeight: 800 }}>
-                  <span>TOTAL</span><span style={{ color: C.green }}>{f(c.total)}</div>
+                  <span>TOTAL</span><span style={{ color: C.green }}>{f(c.total)}</span></div>
               </div>
             </div>
             <div style={{ display: "flex", gap: 10, justifyContent: "flex-end", marginTop: 16 }}>
@@ -748,7 +748,7 @@ export default function App() {
                   <span>Subtotal: <b>{f(c.subtotal)}</b> &nbsp;|&nbsp;</span>
                   {c.sameState ? <span style={{ color: C.blue }}>CGST: <b>{f(c.cgst)}</b> | SGST: <b>{f(c.sgst)}</b></span> : <span style={{ color: C.indigo }}>IGST: <b>{f(c.igst)}</b></span>}
                 </div>
-                <div style={{ fontSize: 17, fontWeight: 800, color: C.green }}>Total: {f(c.total)}</div>
+                <div style={{ fontSize: 17, fontWeight: 800, color: C.green }}>Total: {f(c.total)}</span></div>
               </div>
             );
           })()}
