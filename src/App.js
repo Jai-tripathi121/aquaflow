@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState } from "react";
 
 // ─── INITIAL DATA ────────────────────────────────────────────────────────────
 const initData = {
@@ -214,7 +214,6 @@ export default function App() {
   };
 
   // ── INVOICE CALC ──
-  const invCalc = viewInv ? calcInvoice(viewInv, data.products, data.company, data.customers.find(c => c.id === viewInv.customerId)) : null;
 
   // ── INVOICE ITEMS ──
   const addInvItem = () => setF("items", [...(form.items || []), { productId: data.products[0].id, qty: 1, rate: data.products[0].sellPrice }]);
